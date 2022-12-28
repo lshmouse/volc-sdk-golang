@@ -2,6 +2,8 @@ package billing
 
 import "github.com/volcengine/volc-sdk-golang/base"
 
+// see: https://www.volcengine.com/docs/6269/130259
+
 type Bill struct {
 	BillPeriod             string
 	PayerID                string
@@ -19,14 +21,14 @@ type Bill struct {
 	TradeTime              string
 	BillID                 string
 	BillCategoryParent     string
-	OriginalBillAmount     string
-	PreferentialBillAmount string
-	RoundBillAmount        string
-	DiscountBillAmount     string
-	CouponAmount           string
-	PayableAmount          string
-	PaidAmount             string
-	UnpaidAmount           string
+	OriginalBillAmount     float64
+	PreferentialBillAmount float64
+	RoundBillAmount        float64
+	DiscountBillAmount     float64
+	CouponAmount           float64
+	PayableAmount          float64
+	PaidAmount             float64
+	UnpaidAmount           float64
 	Currency               string
 	PayStatus              string
 }
@@ -76,13 +78,13 @@ type BillDetail struct {
 	Count                  string
 	Unit                   string
 	DeductionCount         string
-	OriginalBillAmount     string
-	PreferentialBillAmount string
-	DiscountBillAmount     string
-	CouponAmount           string
-	PayableAmount          string
-	PaidAmount             string
-	UnpaidAmount           string
+	OriginalBillAmount     float64
+	PreferentialBillAmount float64
+	DiscountBillAmount     float64
+	CouponAmount           float64
+	PayableAmount          float64
+	PaidAmount             float64
+	UnpaidAmount           float64
 	Currency               string
 }
 
@@ -111,14 +113,14 @@ type BillOverviewByProd struct {
 	ProductZh              string
 	BillingMode            string
 	BillCategoryParent     string
-	OriginalBillAmount     string
-	PreferentialBillAmount string
-	RoundBillAmount        string
-	DiscountBillAmount     string
-	CouponAmount           string
-	PayableAmount          string
-	PaidAmount             string
-	UnpaidAmount           string
+	OriginalBillAmount     float64
+	PreferentialBillAmount float64
+	RoundBillAmount        float64
+	DiscountBillAmount     float64
+	CouponAmount           float64
+	PayableAmount          float64
+	PaidAmount             float64
+	UnpaidAmount           float64
 }
 
 type BillOverviewByProdList struct {
